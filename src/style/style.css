@@ -1,0 +1,22 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.i .i-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.i .i-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=style.css.map */
