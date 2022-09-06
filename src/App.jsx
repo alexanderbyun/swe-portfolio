@@ -1,8 +1,14 @@
 import "./style/style.css";
-import Intro from "./components/intro";
+import Intro from "./components/Intro";
+import About from "./components/About";
 
 const App = () => {
-  return <div><Intro/></div>;
+  return (
+  <div>
+    <Intro/>
+    <About/>
+  </div>
+  )
 };
 
 export default App;
