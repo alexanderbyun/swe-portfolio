@@ -131,18 +131,44 @@
 
 .a {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .a .a-left {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.a .a-left .a-card.bg {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  background-color: #817f70;
 }
 
 .a .a-left .a-card {
-  width: 60%;
+  width: 70%;
   height: 70vh;
-  border-radius: 30px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .a .a-left .a-img {

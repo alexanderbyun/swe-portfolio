@@ -1,5 +1,5 @@
 import "../style/style.css";
-import Profile from "../img/profile.png";
+import Photo from "../img/profile.png";
 
 const Intro = () => {
   return (
@@ -29,7 +29,7 @@ const Intro = () => {
 
     <div className="i-right">
         <div className="i-bg"></div>
-        <img src={Profile} alt="Alexander Byun" className="i-img" />
+        <img src={Photo} alt="Alexander Byun" className="i-img" />
     </div>
 
 
