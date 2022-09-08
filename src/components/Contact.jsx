@@ -1,14 +1,27 @@
-import React from 'react'
 import Phone from "../img/phone.png"
 import Email from "../img/email.png"
 import Address from "../img/address.png"
-import {useRef} from "react";
+import React, {useRef} from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
     const formRef = useRef()
     
-    handleSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault()
+        emailjs
+            .sendForm(
+                'service_okhvqrc', 
+                'template_o66nuai', 
+                formRef.current, 
+                '8KFDZ1U8zAo34RPlO'
+            )
+                .then((result) => {
+                    console.log(result.text)
+                }, 
+                (error) => {
+                    console.log(error.text)
+                })
     }
 
   return (
@@ -44,8 +57,14 @@ const Contact = () => {
                     <input type="text" placeholder="Name" name="user_name" />
                     <input type="text" placeholder="Subject" name="user_subject" />
                     <input type="text" placeholder="Email" name="user_email" />
-                    <textarea rows="5" placeholder="Message" name="message"/>
+                    <textarea rows="5" placeholder="Message" name="message" />
                     <button>Submit</button>
+                    {/* <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
+                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
+                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
+                    <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
+                    <button>Submit</button>
+                    {done && "Thank you..."} */}
                 </form>
             </div>
         </div>
