@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         name: "Deskspace Gallery",
-        img: "https://i.imgur.com/yqsNxaX.png",
+        img: "https://i.imgur.com/5zSwvHB.png",
         link: "https://safe-thicket-14758.herokuapp.com/",
         tech: "Express.js, Node.js, MongoDB, Mongoose, Atlas, CSS, Heroku"
     },

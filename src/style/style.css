@@ -344,13 +344,15 @@ h1 {
   width: 50%;
   height: 60px;
   border: none;
-  border-bottom: 2px;
-  margin: 10px 0px 0px 0px;
+  border-bottom: 1px solid #000000;
+  margin: 10px 0px;
+  padding-left: 10px;
 }
 
 .c .c-wrapper .c-right textarea {
   width: 100%;
   margin: 10px 0px;
+  padding-left: 10px;
 }
 
 .c .c-wrapper .c-right button {
@@ -359,5 +361,15 @@ h1 {
   background-color: #817f70;
   color: white;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .c .c-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
