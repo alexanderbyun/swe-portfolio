@@ -2,8 +2,15 @@ import React from 'react'
 import Phone from "../img/phone.png"
 import Email from "../img/email.png"
 import Address from "../img/address.png"
+import {useRef} from "react";
 
 const Contact = () => {
+    const formRef = useRef()
+    
+    handleSubmit = (e) => {
+        e.preventDefault()
+    }
+
   return (
     <div className="c">
         
@@ -33,7 +40,7 @@ const Contact = () => {
                     <b>What's your story?</b>
                     <p>Get in touch. Always available for freelancing if the right project comes along.</p>
                 </p>
-                <form>
+                <form ref={formRef} onSubmit={handleSubmit}>
                     <input type="text" placeholder="Name" name="user_name" />
                     <input type="text" placeholder="Subject" name="user_subject" />
                     <input type="text" placeholder="Email" name="user_email" />
