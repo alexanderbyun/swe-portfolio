@@ -186,6 +186,7 @@ h1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding-right: 50px;
 }
 
 .pl {
@@ -241,6 +242,9 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
 }
 
 .p .p-browser .p-circle {
@@ -249,5 +253,111 @@ h1 {
   border-radius: 50%;
   margin: 3px;
   background-color: #ffffff;
+}
+
+.p .p-img {
+  width: 100%;
+}
+
+.p:hover .p-img {
+  -webkit-animation: move 2s ease-in-out infinite alternate;
+          animation: move 2s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 480px) {
+  .p {
+    width: 40%;
+    height: 20vh;
+  }
+}
+
+.c {
+  height: 100vh;
+  position: relative;
+}
+
+.c .c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: #5196d7;
+  position: absolute;
+}
+
+.c .c-wrapper {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c .c-wrapper .c-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.c .c-wrapper .c-left .c-title {
+  width: 80%;
+}
+
+.c .c-wrapper .c-left .c-info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0px;
+  width: 70%;
+}
+
+.c .c-wrapper .c-left .c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.c .c-wrapper .c-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c .c-wrapper .c-right form {
+  margin-top: 20px;
+}
+
+.c .c-wrapper .c-right input {
+  width: 50%;
+  height: 60px;
+  border: none;
+  border-bottom: 2px;
+  margin: 10px 0px 0px 0px;
+}
+
+.c .c-wrapper .c-right textarea {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.c .c-wrapper .c-right button {
+  border: none;
+  padding: 15px;
+  background-color: #817f70;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,16 @@
 import "./style/style.css";
 import Intro from "./components/Intro";
 import About from "./components/About";
-import PortfolioList from "./components/PortfolioList";
+import ProjectsList from "./components/ProjectsList";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
   <div>
     <Intro/>
     <About/>
-    <PortfolioList/>
+    <ProjectsList/>
+    <Contact/>
   </div>
   )
 };

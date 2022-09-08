@@ -19,7 +19,9 @@ const About = () => {
         <p>
         Hi there! My interest in coding started in my senior year of high school, where I took a web design class that mainly covered HTML and CSS. I had a great time then, but that was all the way back in 2009.
         <br/><br/>
-        Over these past 13 formative years, wherever I went, I found great satisfaction is leaving things better than I found them. Whether it was changing the lightbulbs to be the same color temperature, or streamlining a company's workflow for critial processes, I always try to find a way to leave a positive impact.
+        A great deal has happened over these past 13 formative years. My years in accounting taught me punctuality and the ability to thrive under tight schedules and deadlines. My time in IT consisted of overseeing companies' entire computer networks and solving problems up and down the company hierarchy, which honed my problem-solving and communication skills to find root causes of issues and provide lasting solutions and guidance to users.
+        <br/><br/>
+        Now, with an intensive full-time software engineering bootcamp course under my belt, I strive to synergize my varied experiences to bring a unique perspective to the table. With lifelong values of bringing the best out of my teammates and peers and leaving things better than I found them, I aim to create creative digital solutions to solve problems and streamline workflows.
         </p>
       </div>
 

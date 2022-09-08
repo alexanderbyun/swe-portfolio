@@ -20,9 +20,9 @@ const Intro = () => {
                 </div>
             </div>
             <div className="i-description">
-                <p>
+                {/* <p>
                     I always strive to leave things better than I found them. With a background in accounting and IT, my passion is in utilizing my varied perspectives to create the digital tools needed to solve problems and streamline workflows.
-                </p>
+                </p> */}
             </div>
         </div>
     </div>
