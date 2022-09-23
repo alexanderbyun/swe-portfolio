@@ -13,7 +13,7 @@ const ProjectsList = () => {
         </div>
         <div className="pl-list">
            {projects.map((item) => (
-            <Projects key={item.id} img={item.img} link={item.link} /> 
+            <Projects key={item.id} img={item.img} link={item.link} tech={item.tech}/> 
            ))}
         </div>
     </div>

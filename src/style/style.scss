@@ -162,8 +162,15 @@ h1 {
     }
 
 }
-
 .p {
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid #e1e1e1;
+    border-radius: 9px 9px 0px 0px;
+    overflow: hidden;
+
+    .p-window {
     width: 30%;
     height: 40vh;
     margin: 20px 10px;
@@ -193,6 +200,13 @@ h1 {
         width: 100%;
     }
 
+    }
+
+    .p-tech {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 .p:hover .p-img {

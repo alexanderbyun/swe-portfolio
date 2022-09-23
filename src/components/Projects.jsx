@@ -1,7 +1,7 @@
 import "../style/style.css";
 import React from 'react';
 
-const Projects = ({img, link}) => {
+const Projects = ({img, link, tech}) => {
   return (
     <div className="p">
         <div className="p-browser">
@@ -13,6 +13,10 @@ const Projects = ({img, link}) => {
         <a href={link} target="_blank" rel="noreferrer">
           <img src={img} alt="" className="p-img" />
         </a>
+        
+        <div className="p-tech">
+          <p>{tech}</p>
+        </div>
 
     </div>
   )
