@@ -6,7 +6,7 @@ import Moon from "../img/moon.png"
 const Toggle = () => {
   return (
     <div className="t">
-      Toggle
+      
     </div>
   )
 }
