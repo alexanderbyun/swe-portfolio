@@ -6,6 +6,7 @@ h1 {
     font-size: 30px;
 }
 
+// index
 .i{
     display: flex;
 
@@ -85,15 +86,7 @@ h1 {
 
 }
 
-@keyframes move {
-    50%{
-        transform: translateY(-50px);
-    }
-    100%{
-        transform: translateY(-100px);
-    }
-}
-
+// about
 .a {
     height: 100vh;
     display: flex;
@@ -112,7 +105,7 @@ h1 {
             // top: 90px;
             top: 50px;
             left: 50px;
-            background-color: #f7eb92;
+            background-color: #d9d3a8;
         }
 
         .a-card {
@@ -139,6 +132,7 @@ h1 {
 
 }
 
+//project list
 .pl {
     padding: 50px 100px;
     display: flex;
@@ -162,6 +156,8 @@ h1 {
     }
 
 }
+
+//projects
 .p {
     width: 30%;
     height: 40vh;
@@ -171,11 +167,11 @@ h1 {
     overflow: hidden;
 
     .p-window {
-    width: 30%;
-    height: 40vh;
-    margin: 20px 10px;
-    border: 2px solid #e1e1e1;
-    border-radius: 9px 9px 0px 0px;
+    width: 100%;
+    height: 60vh;
+    margin: 0px 0px;
+    border: px solid #e1e1e1;
+    border-radius: 0px 0px 0px 0px;
     overflow: hidden;
 
     .p-browser {
@@ -204,22 +200,16 @@ h1 {
 
     .p-tech {
         width: 100%;
-        position: absolute;
-        bottom: 0;
     }
 }
 
 .p:hover .p-img {
-    animation: move 2s ease-in-out infinite alternate;
+    animation: move 3s ease-in-out infinite alternate;
 }
 
-@media screen and (max-width: 480px) {
-    .p {
-        width: 40%;
-        height: 20vh;
-    }
-}
 
+
+//contact
 .c {
     height: 100vh;
     position: relative;
@@ -263,12 +253,16 @@ h1 {
             align-items: center;
             justify-content: center;
 
+            .c-desc {
+                width: 100%;
+            }
+
             form {
                 margin-top: 20px;
             }
 
             input {
-                width: 50%;
+                width: 100%;
                 height: 60px;
                 border: none;
                 border-bottom: 1px solid #000000;
@@ -279,6 +273,7 @@ h1 {
             textarea {
                 width: 100%;
                 margin: 10px 0px;
+                border: 1px solid #000000;
                 padding-left: 10px;
             }
 
@@ -291,13 +286,107 @@ h1 {
             }
 
         }
+
     }
  
-    @media screen and (max-width: 480px) {
-        .c-wrapper {
-          flex-direction: column;
-          padding: 0px 50px;
+}
+
+@keyframes move {
+    100%{
+        transform: translateY(-100px);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 11px;
+    }
+
+    .i{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .a {
+        height: 110vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a-left {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .a-right {
+        height: 100vh;
+        width: 100%;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0px;
+        padding-bottom: 50px;
+    }
+
+    .a-card.bg {
+        height: 50%;
+        position: absolute;        
+        top: 50px;
+        left: 50px;
+        background-color: #edd623;
+    }
+
+    .a-card {
+        // width: 70%;
+        width: 50%;
+        height: 40vh;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pl {
+        padding: 50px 0px 0px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pl-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 10px;
+        height: 20vh;
+    }
+
+    .c {
+        height: 100%;
+    }
+    .c-wrapper {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
+
+    @keyframes move {
+        100%{
+            transform: translateY(-100px);
         }
+
     }
 
 }

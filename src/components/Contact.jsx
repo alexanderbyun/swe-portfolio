@@ -33,7 +33,7 @@ const Contact = () => {
         
         <div className="c-wrapper">
             <div className="c-left">
-                <h1 className="c-title">Contact Me</h1>
+                <h2 className="c-title">Contact</h2>
                 <div className="c-info">
                     <div className="c-info-item">
                         <img src={Phone} alt="" className="c-icon" />
@@ -51,15 +51,15 @@ const Contact = () => {
             </div>
             
             <div className="c-right">
-                <p className="c-desc">
-                    <b>Questions?</b>
-                    <p>Feel free to reach me below.</p>
-                </p>
+                <div className="c-desc">
+                    <h2>Questions?</h2>
+                    {/* <p>Feel free to reach me below.</p> */}
+                </div>
                 <form ref={formRef} onSubmit={handleSubmit}>
                     <input type="text" placeholder="Name" name="user_name" />
                     <input type="text" placeholder="Subject" name="user_subject" />
                     <input type="text" placeholder="Email" name="user_email" />
-                    <textarea rows="5" placeholder="Message" name="message" />
+                    <textarea rows="7" placeholder="Message" name="message" />
                     <button>Submit</button>
                     {/* {done & "I'll be in touch!"} */}
                 </form>
