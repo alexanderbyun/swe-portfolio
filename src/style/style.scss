@@ -2,6 +2,10 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media screen and (max-width: 500px) {
+   
+}
+
 h1 {
     font-size: 30px;
 }
@@ -105,7 +109,7 @@ h1 {
             // top: 90px;
             top: 50px;
             left: 50px;
-            background-color: #d9d3a8;
+            background-color: #ddcf66;
         }
 
         .a-card {
@@ -299,6 +303,13 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+    }
+
     p {
         font-size: 11px;
     }
@@ -311,58 +322,68 @@ h1 {
     }
 
     .a {
-        height: 110vh;
+        height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
-    }
 
-    .a-left {
-        height: 50vh;
-        width: 100%;
-    }
+        .a-left {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
 
-    .a-right {
-        height: 100vh;
-        width: 100%;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        padding-right: 0px;
-        padding-bottom: 50px;
-    }
+            .a-card.bg {
+                display: none;
+            }
+        
+            .a-card {
+                width: 85%;
+                height: 70%;
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
 
-    .a-card.bg {
-        height: 50%;
-        position: absolute;        
-        top: 50px;
-        left: 50px;
-        background-color: #edd623;
-    }
+                .a-img {
+                    height: 100%;
+                    // width: 10%;
+                }
 
-    .a-card {
-        // width: 70%;
-        width: 50%;
-        height: 40vh;
-        border-radius: 20px;
-        position: relative;
-        overflow: hidden;
+            }
+        
+        }
+
+        .a-right {
+            // height: 50vh;
+            width: 80%;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            padding-right: 0px;
+            padding-bottom: 50px;
+        }
+
     }
 
     .pl {
-        padding: 50px 0px 0px 50px;
+        // padding: 0px 0px 0px 0px;
+        // width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+
+        .pl-list {
+            width: 150%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     }
 
-    .pl-list {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+   
 
     .p {
         display: flex;
@@ -376,11 +397,14 @@ h1 {
 
     .c {
         height: 100%;
+
+        .c-wrapper {
+            flex-direction: column;
+            padding: 0px 50px;
+          }
+          
     }
-    .c-wrapper {
-      flex-direction: column;
-      padding: 0px 50px;
-    }
+    
 
     @keyframes move {
         100%{

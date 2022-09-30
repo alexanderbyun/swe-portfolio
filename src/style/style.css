@@ -142,7 +142,7 @@ h1 {
   position: absolute;
   top: 50px;
   left: 50px;
-  background-color: #d9d3a8;
+  background-color: #ddcf66;
 }
 
 .a .a-left .a-card {
@@ -367,6 +367,15 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   p {
     font-size: 11px;
   }
@@ -382,7 +391,7 @@ h1 {
     padding-bottom: 100px;
   }
   .a {
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -392,13 +401,34 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .a-left {
-    height: 50vh;
+  .a .a-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .a-right {
-    height: 100vh;
-    width: 100%;
+  .a .a-left .a-card.bg {
+    display: none;
+  }
+  .a .a-left .a-card {
+    width: 85%;
+    height: 70%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .a .a-left .a-card .a-img {
+    height: 100%;
+  }
+  .a .a-right {
+    width: 80%;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -411,22 +441,7 @@ h1 {
     padding-right: 0px;
     padding-bottom: 50px;
   }
-  .a-card.bg {
-    height: 50%;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: #edd623;
-  }
-  .a-card {
-    width: 50%;
-    height: 40vh;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-  }
   .pl {
-    padding: 50px 0px 0px 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -439,8 +454,8 @@ h1 {
             align-items: center;
     text-align: center;
   }
-  .pl-list {
-    width: 100%;
+  .pl .pl-list {
+    width: 150%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -470,7 +485,7 @@ h1 {
   .c {
     height: 100%;
   }
-  .c-wrapper {
+  .c .c-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
