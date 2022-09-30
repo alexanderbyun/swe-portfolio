@@ -162,10 +162,12 @@ h1 {
 
 //projects
 .p {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     height: 40vh;
     margin: 20px 10px;
-    border: 2px solid #e1e1e1;
+    border: 0px solid #e1e1e1;
     border-radius: 9px 9px 0px 0px;
     overflow: hidden;
 
@@ -185,12 +187,19 @@ h1 {
         position: sticky;
         z-index: 2;
 
-        .p-circle {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            margin: 3px;
-            background-color: #ffffff;
+        .p-nav {
+            margin-left: 5px;
+            display: flex;
+            flex-direction: row;
+            
+            .p-circle {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                margin: 3px;
+                background-color: #ffffff;
+            }
+
         }
 
     }
@@ -375,8 +384,8 @@ h1 {
         justify-content: center;
         width: 100%;
         overflow: hidden;
-        padding-bottom: 20px;
-        height: 10;
+        padding-bottom: 0px;
+        height: 10%;
     }
 
     .c {
@@ -512,7 +521,7 @@ h1 {
         justify-content: center;
         width: 100%;
         overflow: hidden;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
         height: 30vh;
     }
 

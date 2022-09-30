@@ -7,9 +7,11 @@ const Projects = ({img, link, tech}) => {
 
       <div className="p-window">
         <div className="p-browser">
-          <div className="p-circle"></div>
-          <div className="p-circle"></div>
-          <div className="p-circle"></div>
+          <div className="p-nav">
+            <div className="p-circle"></div>
+            <div className="p-circle"></div>
+            <div className="p-circle"></div>
+          </div>
         </div>
 
         <a href={link} target="_blank" rel="noreferrer">
@@ -19,7 +21,9 @@ const Projects = ({img, link, tech}) => {
       </div>
 
       <div className="p-tech">
+        <br/>
         <p>{tech}</p>
+        <br/>
       </div>
 
     </div>
