@@ -11,20 +11,20 @@ export const projects = [
         name: "Top Eats",
         img: "https://i.imgur.com/xE1ikux.png",
         link: "https://nameless-ravine-35424.herokuapp.com/",
-        tech: "React.js | MongoDB | Atlas | Skeleton CSS | Heroku"
+        tech: "React.js | Node.js | MongoDB | Atlas | Skeleton CSS | Heroku"
     },
     {
         id: 3,
         name: "Pretty PC",
         img: "https://i.imgur.com/a4cgNvP.png",
         link: "https://pc-frontend-app.herokuapp.com/",
-        tech: "React.js | PostgreSQL | Django | Node.js | Sass CSS | Heroku",
+        tech: "React.js | Django | PostgreSQL | Sass CSS | Heroku",
     },
     {
         id: 4,
         name: "Shinbalnom",
         img: "https://i.imgur.com/WaaCrdZ.png",
         link: "https://shinbalnom-frontend.herokuapp.com/",
-        tech: "React.js | Java Spring Boot | PostgreSQL | Node.js | Sass CSS | Heroku",
+        tech: "React.js | Java | Spring Boot | PostgreSQL | Node.js | Sass CSS | Heroku",
     },
 ]

@@ -488,14 +488,20 @@ h1 {
     height: 10%;
   }
   .c {
-    height: 100%;
+    height: 100vh;
+  }
+  .c .c-bg {
+    height: 100vh;
   }
   .c .c-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0px 50px;
+    padding: 20px 75px 0px 50px;
   }
   @-webkit-keyframes move {
     100% {
@@ -648,23 +654,14 @@ h1 {
     height: 100vh;
   }
   .c .c-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 10px 40px;
-  }
-  @-webkit-keyframes move {
-    100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
-    }
-  }
-  @keyframes move {
-    100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
-    }
   }
 }
 /*# sourceMappingURL=style.css.map */
