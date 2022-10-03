@@ -1,13 +1,19 @@
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-@media screen and (max-width: 500px) {
-   
+    background-color: #f3eedf;
 }
 
 h1 {
     font-size: 30px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 3px;
 }
 
 // index
@@ -131,6 +137,31 @@ h1 {
     .a-right {
         flex: 1;
         padding-right: 50px;
+
+        .a-tech {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .a-ul {
+                display: flex;
+                width: 40%;
+
+                .a-ul-left{
+                    flex: 1;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                .a-ul-right{
+                    flex: 1;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+            }
+
+        }
     }
 
 }
@@ -315,6 +346,10 @@ h1 {
 
 //responsive: tablet
 @media screen and (max-width: 1000px) {
+    p {
+        font-size: 14px;
+    }
+
     .i{
         height: 100vh;
         display: flex;
@@ -416,7 +451,7 @@ h1 {
 }
 
 //responsive: smartphone
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     p {
         font-size: 12px;
     }

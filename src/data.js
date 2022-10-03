@@ -9,14 +9,14 @@ export const projects = [
     {
         id: 2,
         name: "Top Eats",
-        img: "https://i.imgur.com/xE1ikux.png",
+        img: "https://i.imgur.com/5CJHGkX.png",
         link: "https://nameless-ravine-35424.herokuapp.com/",
         tech: "React.js | Node.js | MongoDB | Atlas | Skeleton CSS | Heroku"
     },
     {
         id: 3,
         name: "Pretty PC",
-        img: "https://i.imgur.com/a4cgNvP.png",
+        img: "https://i.imgur.com/TNSfJRx.png",
         link: "https://pc-frontend-app.herokuapp.com/",
         tech: "React.js | Django | PostgreSQL | Sass CSS | Heroku",
     },
