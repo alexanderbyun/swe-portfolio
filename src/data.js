@@ -18,7 +18,7 @@ export const projects = [
         name: "Pretty PC",
         img: "https://i.imgur.com/TNSfJRx.png",
         link: "https://pc-frontend-app.herokuapp.com/",
-        tech: "React.js | Django | PostgreSQL | Sass CSS | Heroku",
+        tech: "React.js | Django | Python | PostgreSQL | Sass CSS | Heroku",
     },
     {
         id: 4,
