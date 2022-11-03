@@ -1,7 +1,7 @@
 import "../style/style.css";
 import React from 'react';
 
-const Projects = ({img, link, tech}) => {
+const Projects = ({img, link, tech, focus}) => {
   return (
     <div className="p">
 
@@ -23,6 +23,8 @@ const Projects = ({img, link, tech}) => {
       <div className="p-tech">
         <br/>
         <p>{tech}</p>
+        <br/>
+        <p>Focus: {focus}</p>
         <br/>
       </div>
 
